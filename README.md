@@ -1,4 +1,4 @@
-# olympics-tokyo-2021-schedule-scrapper
+# olympics-tokyo-2021-schedule-scraper
 A puppeteer based web scraper for olympics event schedule
 
 #### Usage
