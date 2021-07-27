@@ -81,7 +81,7 @@ const path = require('path');
           if (score) {
             participant.score = score
 
-            if ($(playerElement).closest('.row').find('.resultContainer.winner')) {
+            if ($(playerElement).closest('.row').find('.resultContainer.winner').length) {
               participant.isWinner = true
             }
           }
@@ -98,18 +98,28 @@ const path = require('path');
 
         lastEventStartTime = startTime
 
+        const medalEventType = (
+          $(element).find('.schedule-event .col-sm-6:nth(0) img.medal').attr('title') || ''
+        ).replace('Medal Event', '').trim().toUpperCase()
+
+        const meta = {
+          sportID: $(element).attr('sport'),
+          sportName: $($(element).parents('.schedule-container').parents('div').prev('.schedule-day-header').find('a')[0]).text().replace(/\n/gmi, ''),
+          sportLogo: getAbsURL($(element).parents('.schedule-container').parents('div').prev('.schedule-day-header').find('.sport-icon').attr('src')),
+          status: $(element).find('.schedule-status').text().replace(/\n/gmi, '').toUpperCase(),
+          participants
+        }
+
+        if (medalEventType) {
+          meta.medalType = medalEventType
+        }
+
         events.push({
           startTime,
           location: $(element).find('.schedule-venue').text().replace(/\n/gmi, ''),
           title: $(element).find('.schedule-event .col-sm-6:nth(0) a').text().replace(/\n/gmi, ''),
           link: getAbsURL($(element).attr('data-url')),
-          meta: {
-            sportID: $(element).attr('sport'),
-            sportName: $($(element).parents('.schedule-container').parents('div').prev('.schedule-day-header').find('a')[0]).text().replace(/\n/gmi, ''),
-            sportLogo: getAbsURL($(element).parents('.schedule-container').parents('div').prev('.schedule-day-header').find('.sport-icon').attr('src')),
-            status: $(element).find('.schedule-status').text().replace(/\n/gmi, '').toUpperCase(),
-            participants
-          }
+          meta
         })
       }
       )
