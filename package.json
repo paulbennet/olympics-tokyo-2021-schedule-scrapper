@@ -1,25 +1,29 @@
 {
-  "name": "olympics-tokyo-2021-schedule-scrapper",
-  "version": "1.0.0",
-  "description": "A puppeteer based web scrapper for olympics event schedule",
-  "main": "index.js",
-  "bin": {
-    "olympics-2021-scrapper": "index.js"
-  },
-  "scripts": {
-    "fetch": "node index.js"
-  },
-  "author": "paulbennetjoshua@gmail.com",
-  "license": "ISC",
-  "dependencies": {
-    "fs-extra": "^10.0.0",
-    "puppeteer": "^10.1.0"
-  },
-  "devDependencies": {
-    "eslint": "^7.29.0",
-    "eslint-config-standard": "^16.0.3",
-    "eslint-plugin-import": "^2.23.4",
-    "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-promise": "^5.1.0"
-  }
+    "name": "olympics-tokyo-2021-schedule-scrapper",
+    "version": "1.0.1",
+    "description": "A puppeteer based web scrapper for olympics event schedule",
+    "main": "index.js",
+    "bin": {
+        "olympics-2021-scrapper": "index.js"
+    },
+    "scripts": {
+        "fetch": "node index.js"
+    },
+    "author": "paulbennetjoshua@gmail.com",
+    "license": "GPL-3.0-or-later",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/paulbennet/olympics-tokyo-2021-schedule-scrapper.git"
+    },
+    "dependencies": {
+        "fs-extra": "^10.0.0",
+        "puppeteer": "^10.1.0"
+    },
+    "devDependencies": {
+        "eslint": "^7.29.0",
+        "eslint-config-standard": "^16.0.3",
+        "eslint-plugin-import": "^2.23.4",
+        "eslint-plugin-node": "^11.1.0",
+        "eslint-plugin-promise": "^5.1.0"
+    }
 }
