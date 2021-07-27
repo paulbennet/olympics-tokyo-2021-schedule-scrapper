@@ -1,10 +1,11 @@
 {
-    "name": "olympics-tokyo-2021-schedule-scrapper",
-    "version": "1.0.3",
-    "description": "A puppeteer based web scrapper for olympics event schedule",
+    "name": "olympics-tokyo-2021-schedule-scraper",
+    "version": "1.0.4",
+    "description": "A puppeteer based web scraper for olympics event schedule",
     "main": "index.js",
     "bin": {
-        "olympics-2021-scrapper": "index.js"
+        "olympics-2021-scrapper": "index.js",
+        "olympics-2021-scraper": "index.js"
     },
     "scripts": {
         "fetch": "node index.js"
