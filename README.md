@@ -19,3 +19,9 @@ olympics-2021-scraper <date-to-parse> <output-dir>
 ````bash
 npx olympics-tokyo-2021-schedule-scraper <date-to-parse> <output-dir>
 ````
+
+
+**Disclaimer:**
+- This tool uses puppeteer to load web pages from olympics.com to scrape schedule data.
+- Make sure to sensibly use this tool if used in automation, and not overwhelm the web servers.
+- YOU (user) will be completely responsible for usage of this tool. The developer CAN'T be blamed for the abuse of this tool.
