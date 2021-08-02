@@ -1,6 +1,6 @@
 {
     "name": "olympics-tokyo-2021-schedule-scraper",
-    "version": "1.0.6",
+    "version": "1.1.0",
     "description": "A puppeteer based web scraper for olympics event schedule",
     "main": "index.js",
     "bin": {
@@ -16,6 +16,7 @@
         "url": "https://github.com/paulbennet/olympics-tokyo-2021-schedule-scrapper.git"
     },
     "dependencies": {
+        "commander": "^8.1.0",
         "fs-extra": "^10.0.0",
         "puppeteer": "^10.1.0"
     },
@@ -27,6 +28,11 @@
         "eslint-plugin-promise": "^5.1.0"
     },
     "keywords": [
-        "olympics", "tokyo", "2021", "puppeteer", "scrape", "webscraper"
+        "olympics",
+        "tokyo",
+        "2021",
+        "puppeteer",
+        "scrape",
+        "webscraper"
     ]
 }
