@@ -31,7 +31,7 @@ const mainProcess = async () => {
   if (outputDir.startsWith('~/')) {
     outputDir = path.resolve(
       path.join(
-        require('os').homedir(), program.libDir.substring(2)
+        require('os').homedir(), outputDir.substring(2)
       )
     )
   }
