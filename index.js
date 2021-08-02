@@ -28,6 +28,14 @@ const mainProcess = async () => {
     return
   }
 
+  if (outputDir.startsWith('~/')) {
+    outputDir = path.resolve(
+      path.join(
+        require('os').homedir(), program.libDir.substring(2)
+      )
+    )
+  }
+
   outputDir = path.resolve(outputDir)
   fse.mkdirpSync(outputDir)
 
