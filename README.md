@@ -14,12 +14,12 @@ npm install -g olympics-tokyo-2021-schedule-scraper
 #  -m --medals                   Fetch medal standings
 
 # 1. [SCRAPE] Fetch event schedules
-olympics-2021-scraper --date=<date-to-parse> --out-dir=<output-dir>
+olympics-2021-scraper --date=<date-to-parse> --output-dir=<output-dir>
 
-# e.g. olympics-2021-scraper --date=2021-08-01 --out-dir=./schedules
+# e.g. olympics-2021-scraper --date=2021-08-01 --output-dir=./schedules
 
 # 2. [SCRAPE] Fetch medal standings
-olympics-2021-scraper --medals --out-dir=<output-dir>
+olympics-2021-scraper --medals --output-dir=<output-dir>
 
 # NOTE:
 # 1. <date-to-parse> format must be YYYY-MM-DD
@@ -30,10 +30,10 @@ olympics-2021-scraper --medals --out-dir=<output-dir>
 
 ````bash
 # Fetch event schedules
-npx olympics-tokyo-2021-schedule-scraper --date=<date-to-parse> --out-dir=<output-dir>
+npx olympics-tokyo-2021-schedule-scraper --date=<date-to-parse> --output-dir=<output-dir>
 
 # Fetch medal standings
-npx olympics-tokyo-2021-schedule-scraper --date=<date-to-parse> --out-dir=<output-dir>
+npx olympics-tokyo-2021-schedule-scraper --date=<date-to-parse> --output-dir=<output-dir>
 ````
 
 
