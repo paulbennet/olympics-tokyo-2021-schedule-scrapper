@@ -33,7 +33,7 @@ olympics-2021-scraper --medals --output-dir=<output-dir>
 npx olympics-tokyo-2021-schedule-scraper --date=<date-to-parse> --output-dir=<output-dir>
 
 # Fetch medal standings
-npx olympics-tokyo-2021-schedule-scraper --date=<date-to-parse> --output-dir=<output-dir>
+npx olympics-tokyo-2021-schedule-scraper --medals --output-dir=<output-dir>
 ````
 
 
