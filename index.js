@@ -64,6 +64,10 @@ const mainProcess = async () => {
     pageURL = 'https://olympics.com/tokyo-2020/olympic-games/en/results/all-sports/medal-standings.htm'
   }
 
+  page.setExtraHTTPHeaders({
+    'X-PUPPETEER-ID': 'olympics-tokyo-2021-schedule-scraper'
+  })
+
   await page.goto(pageURL, {
     waitUntil: 'networkidle2',
     // Hopefully page should load before 20 secs
